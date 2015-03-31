@@ -46,9 +46,27 @@ $(document).ready(function(){
      * A new object of the given type will be created and added
      * to the stage.
      */
-
+     var leftKofTrack = 100;
+     var leftSnorTrack = 201;
+     var leftDitTrack = 301;
      for (var i = 0; i < window.dancers.length; i++){
-       $(window.dancers[i]).animate({"top": "300px", "height": "10%", "length": "10%"});
+      console.log($(window.dancers[i]).hasClass('koffing'))
+      if ($(window.dancers[i]).hasClass('koffing')){
+       $(window.dancers[i]).animate({"top": "300px", "left": leftKofTrack, "height": "10%", "length": "10%"});
+       leftKofTrack += 25;
+      }
+
+      if ($(window.dancers[i]).hasClass('snorlax')) {
+        $(window.dancers[i]).animate({"top": "400px", "left" : leftSnorTrack, "height": "10%", "length": "10%"});
+        leftSnorTrack += 25;
+      }
+
+      if ($(window.dancers[i]).hasClass('ditto')){
+        $(window.dancers[i]).animate({"top": "500px", "left" : leftDitTrack, "height": "10%", "length": "10%"});
+        leftDitTrack += 25;
+      }
+
+
      }
 
 

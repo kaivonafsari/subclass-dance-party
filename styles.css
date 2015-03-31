@@ -28,16 +28,22 @@ body, a:link, a:visited, a:active{
   position: absolute;
 }
 
-.breakDancer{
-  border:10px solid orange;
-  border-radius:10px;
-  position: absolute;
-}
-
-.testDancer {
+.ditto{
   position: absolute;
   height: 25%;
-  length: 25%;
+
+}
+
+.koffing {
+  position: absolute;
+  height: 25%;
+
+}
+
+.snorlax {
+  position: absolute;
+  height: 25%;
+
 }
 
 .lineUp{
@@ -47,7 +53,7 @@ body, a:link, a:visited, a:active{
 
 .smaller{
   height: 12.5%;
-  length: 12.5%;
+
 }
 
 
