@@ -25,17 +25,31 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:10px solid red;
   border-radius:10px;
-  position:absolute;
+  position: absolute;
 }
 
 .breakDancer{
   border:10px solid orange;
   border-radius:10px;
-  position:absolute;
+  position: absolute;
 }
 
 .testDancer {
-
-
-  position:absolute;
+  position: absolute;
+  height: 25%;
+  length: 25%;
 }
+
+.lineUp{
+  top: 500px;
+
+}
+
+.smaller{
+  height: 12.5%;
+  length: 12.5%;
+}
+
+
+
+
