@@ -3,7 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image:url(http://www.wallsave.com/wallpapers/1280x720/pokemon/53271/pokemon-minimalist-snorlax-video-games-53271.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -23,5 +25,17 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:10px solid red;
   border-radius:10px;
+  position:absolute;
+}
+
+.breakDancer{
+  border:10px solid orange;
+  border-radius:10px;
+  position:absolute;
+}
+
+.testDancer {
+
+
   position:absolute;
 }

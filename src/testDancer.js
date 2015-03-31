@@ -1,8 +1,9 @@
-var makeBlinkyDancer = function(top, left, timeBetweenSteps){
+var makeTestDancer = function(top, left, timeBetweenSteps){
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   this.oldStep = makeDancer.prototype.step;
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<img src="http://24.media.tumblr.com/9dcd6bdef0ae04d9ad5fc615d921cf9e/tumblr_msu3y1JBkb1scncwdo1_500.gif" />');
+  this.$node = $('<img class="testDancer" src="https://38.media.tumblr.com/0c09085ef1bde2e7bcf88ef72ced6566/tumblr_mkud0j9DVw1r67h3uo1_500.gif" />');
+  this.setPosition(top, left);
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
 
@@ -17,15 +18,12 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
 
   //return blinkyDancer;
 };
-
-makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
-makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
-
-makeBlinkyDancer.prototype.step = function(){
+ makeTestDancer.prototype = Object.create(makeDancer.prototype);
+ makeTestDancer.prototype.constructor = makeTestDancer;
+ makeTestDancer.prototype.step = function(){
   this.oldStep();
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
-    this.$node.fadeToggle();
+    this.$node.slideToggle();
   };
-
